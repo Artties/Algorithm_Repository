@@ -26,7 +26,7 @@ public class TwoSumRandom {
 
 
     public static void main(String args[]){
-        InputsForTwoNumberSum inputs = new InputsForTwoNumberSum(numstr:"2,7,11,15",target:"26");
+        InputsForTwoNumberSum inputs = new InputsForTwoNumberSum("2,7,11,15","26");//传入两个字符型的数
         TwoSumRandom ins = new TwoSumRandom();
         for(int i:ins.twoSumRandom(inputs.nums,inputs.target)){
             System.out.println(i);

@@ -1,7 +1,7 @@
 package Code.TwoSum.Course;
 
 import InputsLib.InputsForTwoNumberSum;
-
+//暴力求解
 
 public class TwoSumDeRandom {
     public int[] twoSumDeRandom(int[] nums,int target){
@@ -16,12 +16,11 @@ public class TwoSumDeRandom {
                 }
             }
         }
-
         return ret;
     }
 
     public static void main(String args[]) {
-        InputsForTwoNumberSum inputs = new InputsForTwoNumberSum(numstr:"3,9,2,7,11,15",target:"26");
+        InputsForTwoNumberSum inputs = new InputsForTwoNumberSum("3,9,2,7,11,15","26");
         TwoSumDeRandom ins = new TwoSumDeRandom();
         for(int i : ins.twoSumDeRandom(inputs.nums,inputs.target)){
             System.out.println(i);
